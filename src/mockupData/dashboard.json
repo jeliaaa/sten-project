@@ -1,0 +1,76 @@
+{
+    "dashboard": {
+        "overview": {
+            "totalPipelines": 12,
+            "runningPipelines": 3,
+            "completedPipelines": 7,
+            "failedPipelines": 2
+        },
+        "pipelines": [
+            {
+                "id": "pipeline-001",
+                "name": "Build and Deploy Frontend",
+                "status": "Running",
+                "startedAt": "2024-08-09T08:00:00Z",
+                "lastUpdated": "2024-08-09T08:30:00Z",
+                "triggeredBy": "user-123",
+                "branch": "main"
+            },
+            {
+                "id": "pipeline-002",
+                "name": "Run Tests",
+                "status": "Completed",
+                "startedAt": "2024-08-08T15:00:00Z",
+                "completedAt": "2024-08-08T15:45:00Z",
+                "triggeredBy": "user-456",
+                "branch": "develop"
+            },
+            {
+                "id": "pipeline-003",
+                "name": "Deploy to Staging",
+                "status": "Failed",
+                "startedAt": "2024-08-07T10:00:00Z",
+                "failedAt": "2024-08-07T10:30:00Z",
+                "triggeredBy": "user-789",
+                "branch": "feature/new-feature"
+            }
+        ],
+        "users": [
+            {
+                "userId": "user-123",
+                "userName": "Alice Johnson",
+                "pipelineCount": 5,
+                "lastActivity": "2024-08-09T08:00:00Z"
+            },
+            {
+                "userId": "user-456",
+                "userName": "Bob Smith",
+                "pipelineCount": 3,
+                "lastActivity": "2024-08-08T15:00:00Z"
+            },
+            {
+                "userId": "user-789",
+                "userName": "Carol Davis",
+                "pipelineCount": 4,
+                "lastActivity": "2024-08-07T10:00:00Z"
+            }
+        ],
+        "recentActivities": [
+            {
+                "activityId": "activity-001",
+                "description": "Alice Johnson started a new pipeline: Build and Deploy Frontend",
+                "timestamp": "2024-08-09T08:00:00Z"
+            },
+            {
+                "activityId": "activity-002",
+                "description": "Bob Smith completed pipeline: Run Tests",
+                "timestamp": "2024-08-08T15:45:00Z"
+            },
+            {
+                "activityId": "activity-003",
+                "description": "Carol Davis's pipeline failed: Deploy to Staging",
+                "timestamp": "2024-08-07T10:30:00Z"
+            }
+        ]
+    }
+}
